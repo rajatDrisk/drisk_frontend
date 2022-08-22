@@ -1,0 +1,31 @@
+.welcomeCard {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-card-bg;
+  padding: 4rem;
+  position: relative;
+  border-radius: $border-radius-primary;
+  margin-bottom: 3rem;
+  &__content {
+    width: 50%;
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+  }
+  &__img {
+    width: 40%;
+    text-align: right;
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    img {
+      width: 60%;
+    }
+  }
+}

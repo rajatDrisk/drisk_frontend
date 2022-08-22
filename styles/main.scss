@@ -1,0 +1,16 @@
+@import "./base/mediaQueryManager";
+@import "./base/base";
+@import "./base/variables";
+
+// ! pages
+@import "../styles/pages/dashboard";
+
+// ! components
+@import "../styles/components/whatsappFeedback";
+@import "../styles/components/mainNav";
+@import "../styles/components/sideNav";
+
+// ! containers
+@import "../styles/containers/dashboard/welcomeCard";
+@import "../styles/containers/dashboard/overviewCard";
+@import "../styles/containers/dashboard/rightCard";

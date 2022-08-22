@@ -1,0 +1,115 @@
+.sideNav {
+  background-color: black;
+  width: 20%;
+  height: 80vh;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+
+  &__menu {
+    list-style: none;
+    padding: 4rem 0;
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+      img {
+        display: inline;
+        width: 2.5rem;
+        margin-right: 1.5rem;
+        filter: invert(100%) sepia(100%) saturate(11%) hue-rotate(217deg)
+          brightness(105%) contrast(104%);
+      }
+      .item {
+        display: inline-block;
+        color: #ffff;
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        margin-bottom: 0 !important;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: #ffff;
+        border-radius: 2.5rem 0 0 2.5rem;
+        width: 113.5%;
+        position: relative;
+        img {
+          filter: invert(0%) sepia(5%) saturate(7484%) hue-rotate(7deg)
+            brightness(105%) contrast(99%);
+        }
+        .item {
+          color: black;
+        }
+
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          top: -5rem;
+          right: -0.1rem;
+          width: 2rem;
+          height: 5rem;
+          border-radius: 0 0 2.5rem 0;
+          // z-index: 1;
+          background-color: transparent;
+          box-shadow: 0 2.5rem 0 0 white;
+        }
+        &::before {
+          top: auto;
+          bottom: -5rem;
+          border-radius: 0 2.5rem 0 0;
+          box-shadow: 0 -2.5rem 0 0 white;
+        }
+      }
+    }
+  }
+
+  &__toggle {
+    background-color: #ffff;
+    border-radius: 100%;
+    margin-bottom: 6rem;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img {
+      width: 1rem;
+    }
+  }
+
+  // !class to toggle the side nav
+  &--hide {
+    width: 8%;
+    transition: all 0.2s ease;
+    .sideNav__menu {
+      &__item {
+        img {
+          margin-right: 0;
+        }
+        .item {
+          display: none;
+          pointer-events: none;
+        }
+        &:hover {
+          width: 150%;
+        }
+      }
+    }
+
+    // !flip the main icon
+    .sideNav__toggle {
+      img {
+        transform: scaleX(-1);
+      }
+    }
+  }
+}

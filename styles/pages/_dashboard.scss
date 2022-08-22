@@ -1,0 +1,45 @@
+.dashboard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__nav {
+    padding: 2.5rem 4rem;
+  }
+  &__content {
+    display: flex;
+    margin: 3rem 4rem;
+    &__data {
+      display: flex;
+      flex-direction: column;
+      margin: 0 4rem;
+      width: 65%;
+    }
+  }
+
+  &__overviewCard {
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    &__contain {
+      display: grid;
+      grid-template-areas:
+        "child-1 child-2"
+        "child-3 child-4";
+      gap: 2.5rem;
+      &__child--1 {
+        grid-area: child-1;
+      }
+      &__child--2 {
+        grid-area: child-2;
+      }
+      &__child--3 {
+        grid-area: child-3;
+      }
+      &__child--4 {
+        grid-area: child-4;
+      }
+    }
+  }
+}
