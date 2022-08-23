@@ -1,9 +1,12 @@
+@import "./base/variables";
 @import "./base/mediaQueryManager";
 @import "./base/base";
-@import "./base/variables";
+@import "./base/btns";
+@import "./base/headings";
 
 // ! pages
 @import "../styles/pages/dashboard";
+@import "../styles/pages/index";
 
 // ! components
 @import "../styles/components/whatsappFeedback";
@@ -11,6 +14,15 @@
 @import "../styles/components/sideNav";
 
 // ! containers
+
+// * Landing Page
+@import "../styles/containers/landingPage/NavBar";
+@import "../styles/containers/landingPage/header";
+@import "../styles/containers/landingPage/logoBox";
+@import "../styles/containers/landingPage/services";
+@import "../styles/containers/landingPage/serviceCard";
+
+// * Dashboard
 @import "../styles/containers/dashboard/welcomeCard";
 @import "../styles/containers/dashboard/overviewCard";
 @import "../styles/containers/dashboard/rightCard";

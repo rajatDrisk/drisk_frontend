@@ -1,0 +1,13 @@
+.btn {
+  background-color: transparent;
+  font-family: inherit;
+  border: 0;
+  padding: 0.7rem 1.8rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  font-size: 1.4rem;
+  background-color: $color-primary;
+  border-radius: $border-radius-primary;
+}

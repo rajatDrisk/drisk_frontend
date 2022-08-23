@@ -1,0 +1,59 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  // position: fixed;
+  &__logo {
+    width: 12%;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      list-style: none;
+      li {
+        a:link,
+        a:visited,
+        a:active {
+          color: $color-white;
+          font-size: 1.4rem;
+          text-decoration: none;
+          display: inline-block;
+          padding: 3rem 0;
+        }
+        position: relative;
+        cursor: pointer;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 1px;
+          background: $color-primary;
+          transition: width 0.3s;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+      }
+      .active {
+        a:link,
+        a:visited,
+        a:active {
+          color: $color-primary;
+          font-weight: 700;
+        }
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

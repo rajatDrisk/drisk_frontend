@@ -1,0 +1,21 @@
+.heading {
+  &--primary {
+    font-size: 5rem;
+    line-height: 7rem;
+    font-weight: 700;
+  }
+
+  &--sub {
+    color: $color-text-grey;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+
+  &--secondary {
+    font-size: 4rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+}

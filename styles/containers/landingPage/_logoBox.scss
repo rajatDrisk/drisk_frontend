@@ -1,0 +1,21 @@
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__heading {
+    color: 2rem;
+    font-weight: 700;
+    color: $color-text-grey-2;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      filter: grayscale(100%);
+      &:not(:last-of-type) {
+        margin-right: 4rem;
+      }
+    }
+  }
+}

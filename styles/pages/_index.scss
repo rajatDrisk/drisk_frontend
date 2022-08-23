@@ -1,0 +1,9 @@
+.landingPage {
+  background-color: $color-black;
+  &__navBar {
+    &--wrapper {
+      background-color: rgba($color: $color-black, $alpha: 0.3);
+      backdrop-filter: blur(6rem);
+    }
+  }
+}
