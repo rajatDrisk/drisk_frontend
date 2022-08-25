@@ -1,0 +1,33 @@
+.investorCard {
+  display: inline-flex;
+  align-items: center;
+  background-color: #191919;
+  padding: 1rem 2rem;
+  color: #bfbfbf;
+  margin-bottom: 3rem;
+  border-radius: 0.4rem;
+  &__imgWrapper {
+    margin-right: 2rem;
+    border: 1px solid #cccccc;
+    border-radius: 100%;
+    padding: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    span {
+      img {
+        border-radius: 100%;
+      }
+    }
+  }
+  &__text {
+    .name {
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+    .desp {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,9 +1,16 @@
 .landingPage {
   background-color: $color-black;
+  position: relative;
   &__navBar {
     &--wrapper {
       background-color: rgba($color: $color-black, $alpha: 0.3);
       backdrop-filter: blur(6rem);
+      position: fixed;
+      z-index: 999;
+      width: 100vw;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
     }
   }
 }

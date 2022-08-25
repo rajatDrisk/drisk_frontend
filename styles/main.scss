@@ -12,6 +12,7 @@
 @import "../styles/components/whatsappFeedback";
 @import "../styles/components/mainNav";
 @import "../styles/components/sideNav";
+@import "../styles/components/btnToggle";
 
 // ! containers
 
@@ -21,6 +22,16 @@
 @import "../styles/containers/landingPage/logoBox";
 @import "../styles/containers/landingPage/services";
 @import "../styles/containers/landingPage/serviceCard";
+@import "../styles/containers/landingPage/productUse";
+@import "../styles/containers/landingPage/calculator";
+@import "../styles/containers/landingPage/investors";
+@import "../styles/containers/landingPage/investorCard";
+@import "../styles/containers/landingPage/vc";
+@import "../styles/containers/landingPage/vcCard";
+@import "../styles/containers/landingPage/testimonial";
+@import "../styles/containers/landingPage/testimonialCard";
+@import "../styles/containers/landingPage/cta";
+@import "../styles/containers/landingPage/footer";
 
 // * Dashboard
 @import "../styles/containers/dashboard/welcomeCard";

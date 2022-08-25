@@ -1,0 +1,54 @@
+.testimonialCard {
+  background-color: #191919;
+  display: inline-block;
+  padding: 3rem;
+  border-radius: 1.2rem;
+  &:not(:last-of-type) {
+    margin-right: 2.4rem;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &--logo {
+      height: 5rem;
+      width: 5rem;
+    }
+    &--details {
+      margin-left: -20%;
+      h3 {
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 2.04rem;
+        font-family: FontHeading, sans-serif;
+      }
+      h4 {
+        color: #757575;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        font-weight: 400;
+        margin-top: 0.3rem;
+      }
+    }
+    &--twitter {
+      filter: invert(68%) sepia(47%) saturate(6513%) hue-rotate(179deg)
+        brightness(95%) contrast(99%);
+    }
+    &::after {
+      content: "";
+      height: 0.1rem;
+      background-color: #90a3bf;
+      position: absolute;
+      width: 100%;
+      bottom: -2rem;
+      opacity: 0.2;
+    }
+  }
+
+  &__tweet {
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #f5f5f5;
+  }
+}

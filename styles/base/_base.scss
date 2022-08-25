@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
 
+@font-face {
+  font-family: FontHeading;
+  src: url("../../assets/Archivo_Expanded-Bold.ttf") format("truetype");
+}
+
 *,
 *::after,
 *::before {
@@ -62,4 +67,8 @@ body {
 
 section {
   padding: 8rem 0;
+
+  .section__heading {
+    text-align: center;
+  }
 }

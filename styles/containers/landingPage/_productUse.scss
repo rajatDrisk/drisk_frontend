@@ -1,0 +1,57 @@
+.productUse {
+  &__toggle {
+    text-align: center;
+    margin-top: 2.2rem;
+  }
+  &__content {
+    margin-top: 6.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &--text {
+      width: 50%;
+      .container {
+        background-color: #191919;
+        padding: 2.5rem 2.4rem;
+        border-radius: 0.8rem;
+        position: relative;
+        &:not(:last-child) {
+          margin-bottom: 1.6rem;
+        }
+        .label {
+          font-size: 2rem;
+          font-family: FontHeading, sans-serif;
+          position: relative;
+          &::before {
+            content: "\25bc";
+            color: $color-white;
+            position: absolute;
+            top: 50%;
+            right: -5px;
+            font-size: 2rem;
+            transform: translateY(-50%);
+          }
+        }
+        .content {
+          font-size: 1.4rem;
+          color: #b3b4b1;
+          height: 0;
+          transition: 0.5s;
+          overflow: hidden;
+        }
+      }
+      .active {
+        .content {
+          height: 5rem;
+          margin-top: 2.4rem;
+        }
+        .label {
+          &::before {
+            transform: rotate(180deg);
+            top: 10%;
+          }
+        }
+      }
+    }
+  }
+}

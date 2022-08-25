@@ -1,0 +1,42 @@
+.cta {
+  background-color: #1c1c1c;
+  padding: 14rem 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &__text {
+    width: 50%;
+    &--heading {
+      h2 {
+        font-size: 4rem;
+        line-height: 6rem;
+        font-weight: 700;
+        font-family: FontHeading, sans-serif;
+      }
+      h3 {
+        font-size: 1.7rem;
+        line-height: 2.55rem;
+        font-weight: 400;
+        margin-top: 1.6rem;
+      }
+    }
+    &--btn {
+      display: flex;
+      margin-top: 4.8rem;
+      &--logo {
+        width: 33%;
+        &:nth-of-type(1) {
+          width: 37%;
+          margin-right: 1.6rem;
+        }
+      }
+    }
+  }
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 20rem;
+  }
+}

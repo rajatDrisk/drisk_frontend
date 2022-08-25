@@ -1,0 +1,104 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    &--wrapper {
+      &:first-of-type {
+        .logo__wrap {
+          width: 25%;
+          margin-bottom: 1.5rem;
+        }
+        .subheading__wrap {
+          width: 60%;
+          margin-bottom: 3rem;
+          p {
+            color: #858585;
+            font-size: 1.7rem;
+            line-height: 2.7rem;
+          }
+        }
+        .social__wrap {
+        }
+      }
+
+      &:nth-of-type(2) {
+        margin-left: -50%;
+        ul {
+          list-style: none;
+          li {
+            cursor: pointer;
+            a:active,
+            a:link,
+            a:visited {
+              font-size: 1.7rem;
+              color: white;
+              text-decoration: none;
+            }
+            &:not(:last-of-type) {
+              margin-bottom: 1.6rem;
+            }
+          }
+        }
+      }
+      &:nth-of-type(3) {
+        ul {
+          list-style: none;
+          li {
+            display: flex;
+            align-items: center;
+            &:first-of-type {
+              margin-bottom: 1.6rem;
+            }
+            .img__wrapper {
+              width: 10%;
+              margin-right: 2rem;
+            }
+            p {
+              font-size: 1.7rem;
+              line-height: 2.55rem;
+            }
+          }
+        }
+      }
+    }
+    //   ! line for the footer
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 0.1rem;
+      background-color: #949494;
+      width: 100%;
+      position: absolute;
+      bottom: -4rem;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+    .bottom__wrapper {
+      display: flex;
+      justify-content: space-between;
+      .text__wrapper {
+        color: #b0b0b0;
+        font-size: 1.7rem;
+        line-height: 2.55rem;
+        &:not(:last-of-type) {
+          &::after {
+            content: "|";
+            margin: 0 3rem;
+          }
+        }
+      }
+      p {
+        font-size: 1.7rem;
+        color: #b0b0b0;
+      }
+    }
+  }
+}

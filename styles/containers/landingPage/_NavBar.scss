@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 0;
-  // position: fixed;
+  padding: 3rem 0 1rem 0;
+  font-family: FontHeading, sans-serif;
+
   &__logo {
-    width: 12%;
+    width: 15%;
   }
 
   &__menu {
@@ -40,7 +41,7 @@
           transition: width 0.3s;
           position: absolute;
           left: 0;
-          bottom: 0;
+          bottom: -1rem;
         }
       }
       .active {

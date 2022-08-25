@@ -1,0 +1,43 @@
+.vcCard {
+  display: flex;
+  background-color: #191919;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+  align-items: center;
+
+  &__logo {
+    background-color: #0033ef;
+    align-self: flex-start;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+  &__text {
+    h3 {
+      font-size: 2rem;
+      text-transform: capitalize;
+      line-height: 3rem;
+      font-weight: 700;
+      font-family: FontHeading, sans-serif;
+    }
+    h4 {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: #dedede;
+      text-transform: capitalize;
+      font-weight: 400;
+    }
+    p {
+      margin-top: 1.6rem;
+      color: #b0b0b0;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      width: 70%;
+    }
+  }
+}

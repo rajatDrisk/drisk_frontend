@@ -4,10 +4,34 @@
   border: 0;
   padding: 0.7rem 1.8rem;
   cursor: pointer;
+  text-transform: capitalize;
+  outline: 0;
+  font-family: FontHeading, sans-serif;
 }
 
 .btn-primary {
   font-size: 1.4rem;
   background-color: $color-primary;
   border-radius: $border-radius-primary;
+}
+
+.btn-large {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 1.5rem 3rem;
+}
+
+.btn-round {
+  background-color: #191919;
+  border-radius: 100%;
+  height: 7rem;
+  width: 7rem;
+  color: #c3d4e9;
+  font-size: 3rem;
+}
+
+.btn-round--active {
+  background-color: #b9ce0c;
+  color: #2e2e2e;
+  box-shadow: 4px 8px 24px rgba(185, 206, 12, 0.25);
 }

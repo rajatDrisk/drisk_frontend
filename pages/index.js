@@ -5,6 +5,13 @@ import Image from "next/image";
 import { useState } from "react";
 import Header from "../containers/landingPage/Header";
 import Services from "../containers/landingPage/Services";
+import ProductUse from "../containers/landingPage/ProductUse";
+import Calculator from "../containers/landingPage/Calculator";
+import Vc from "../containers/landingPage/Vc";
+import Investors from "../containers/landingPage/Investors";
+import Testimonial from "../containers/landingPage/Testimonial";
+import Cta from "../containers/landingPage/Cta";
+import Footer from "../containers/landingPage/Footer";
 
 // !images and icons
 
@@ -32,6 +39,13 @@ export default function Home() {
         </div>
         <Header />
         <Services />
+        <ProductUse />
+        <Calculator />
+        <Vc />
+        <Investors />
+        <Testimonial />
+        <Cta />
+        <Footer />
       </div>
     </>
   );

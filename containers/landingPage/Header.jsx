@@ -10,7 +10,7 @@ import appStore from "../../assets/landingPage/appStore.png";
 import { LogoBox } from "./LogoBox";
 
 // ! third party library
-// import ReactTooltip from "react-tooltip";
+import ReactTooltip from "react-tooltip";
 
 const Header = () => {
   return (
@@ -28,14 +28,15 @@ const Header = () => {
           </h3>
           <div className="exchangeBox">
             <div className="exchangeBox--logoContainer">
-              <div className="logo">
+              <div className="logo" data-tip="Binance">
                 <Image src={binance} />
               </div>
+              <ReactTooltip place="top" type="dark" effect="float" />
               <div className="logo">
-                <Image src={wazirX} />
+                <Image data-tip="WazirX" src={wazirX} />
               </div>
               <div className="logo">
-                <Image src={random} />
+                <Image data-tip="CoinDCX" src={random} />
               </div>
             </div>
             <p className="exchangeBox--text">+10 more</p>
